@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    Great Job!
+    <form action="/add_tweet" method="POST">
+        <label> title </label>
+        <input type="text" name="title" placeholder="Title" required>
+        <label> text </label>
+        <input type="text" name="text" placeholder="Text" maxlength="280">
+        <input type="submit" value="Submit">
+
+    </form>
+    
+        <a href = {{url_for("all_tweets")}}> See all tweets </a>
+
+</body>
+</html>
